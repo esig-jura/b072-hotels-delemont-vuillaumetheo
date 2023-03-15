@@ -6,7 +6,6 @@
  * http://usejsdoc.org/
  */
 
-(function (document) {
   "use strict";
 
   /**
@@ -74,7 +73,6 @@
 
   }
 
-}(document));
 
 
 
