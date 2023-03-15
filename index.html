@@ -15,6 +15,68 @@
 
     <!-- FORMULAIRE DE RESERVATION -->
     <!-- au cas ou t'aurais pas compris place ton fromulaire ici. A+ Manfred -->
+    <form id="formRect" action="" method="post">
+        <ul>
+            <li>
+                <label for="lis_hotel">Hotel</label>
+                <select name="lis_hotel" id="lis_hotel">
+                    <option value="0" selected>-- Sélectionnez un hôtel --</option>
+                    <option value="City">Hôtel City</option>
+                    <option value="Midi">Hôtel Midi</option>
+                    <option value="National">Hôtel National</option>
+                    <option value="Victoria">Hôtel Victoria</option>
+                </select>
+            </li>
+            <li>
+                <label for="txt_nbrChambre">Nombre de chambres</label>
+                <input type="text" id="txt_nbrChambre" name="txt_nbrChambre" maxlength="2">
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Type de chambres</legend>
+                    <input type="radio" id="standardSimple" name="opt_type_chambre" value="standard simple" checked>
+                    <label for="standardSimple">Standard simple</label><br>
+
+                    <input type="radio" id="standardDouble" name="opt_type_chambre" value="standard double" checked>
+                    <label for="standardDouble">Standard double</label><br>
+
+                    <input type="radio" id="superieureSimple" name="opt_type_chambre" value="superieure simple" checked>
+                    <label for="superieureSimple">Supérieure simple</label><br>
+
+                    <input type="radio" id="superieureDouble" name="opt_type_chambre" value="superieure double" checked>
+                    <label for="superieureDouble">Supérieure double</label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Options disponibles</legend>
+                    <input type="checkbox" id="petitDejeuner" name="chk_options">
+                    <label for="petitDejeuner">Petit déjeuner</label><br>
+
+                    <input type="checkbox" id="tv" name="chk_options">
+                    <label for="tv">TV</label><br>
+
+                    <input type="checkbox" id="journeaux" name="chk_options">
+                    <label for="journeaux">Journeaux</label><br>
+
+                    <input type="checkbox" id="ordinateurs" name="chk_options">
+                    <label for="ordinateurs">Ordinateurs</label><br>
+
+                    <input type="checkbox" id="accesWifi" name="chk_options">
+                    <label for="accesWifi">Accès Wifi</label><br>
+
+                    <input type="checkbox" id="animauxCompagnie" name="chk_options">
+                    <label for="animauxCompagnie">Animaux de compagnie</label>
+                </fieldset>
+            </li>
+            <li>
+                <button type="reset">
+                    Effacer
+                </button>
+                <input type="submit" value="Réserver">
+            </li>
+        </ul>
+    </form>
 </div>
 
 <!-- RESERVATION -->

@@ -7,6 +7,7 @@
  */
 
   "use strict";
+  console.log('toto');
 
   /**
    * Retourne le nom de l'hotel sélectionné par le visiteur
