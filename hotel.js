@@ -7,15 +7,20 @@
  */
 
   "use strict";
-  console.log('toto');
-
+  // Récupération des éléments HTML et pas leur valeur ou contenu !!!
+  const formulaire = document.querySelector('form');
+  console.log(formulaire);
+  let listeHotel = document.getElementById("lis_hotel");
+  console.log(listeHotel);
+  let txtNbrChambre = document.getElementById('txt_nbrChambre');
+  console.log(txtNbrChambre);
   /**
    * Retourne le nom de l'hotel sélectionné par le visiteur
    *
    * @returns {String} Nom de l'hotêl ou "0" si pas de sélection
    */
   function getHotel() {
-
+      return listeHotel.value;
   }
 
   /**
@@ -24,7 +29,7 @@
    * @returns {Number} Nombre de chambres ou NaN (Not A Number)
    */
   function getNbChambre() {
-
+      return parseInt(txtNbrChambre.value);
   }
 
   /**
@@ -71,9 +76,10 @@
    * @param event Objet représentant l'événement
    */
   function reserver(event) {
-
+    event.preventDefault(); // Empêche l'envoi du formulaire
+    console.log(getHotel(), getNbChambre());
   }
 
-
-
+  // Gestion des événements
+  formulaire.addEventListener('submit', reserver);
 
